@@ -13,7 +13,7 @@ _In its current form, this script reads a Google Spreadsheet to find available t
 
 _availability(e)_ is run by a **time trigger execution**. It gathers the Form object, and creates two empty arrays which are populated by with available timeslots described in an external Google Spreadsheet. These timeslots are then used to modify _multiple choice_ questions for each day's timeslots.
 
-Successfully making an appointment modifies the external Google Spreadsheet of timeslots. Information is also reset in the event the user wants to make another appointment. **In the event that a timeslot is taken before a user submits their requested time,** the laset section is jumped to informing the user that someone else took the timeslot (indicating it is no longer available). This is achieved by invoking _submitTimes(e)_ as a trigger **On form submit**.
+Successfully making an appointment modifies the external Google Spreadsheet of timeslots. Information is also reset in the event the user wants to make another appointment. **In the event that a timeslot is taken before a user submits their requested time,** the last section is jumped to informing the user that someone else took the timeslot (indicating it is no longer available). This is achieved by invoking _submitTimes(e)_ as a trigger **On form submit**.
 
 ## As-is Procedures
  - Create a Form with 8 sections:
